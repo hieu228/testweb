@@ -1,0 +1,166 @@
+/* Reset mặc định */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+a,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    to right,
+    #83a4d4,
+    #b6fbff
+  ); /* Màu nền gradient */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #005f73; /* Màu xanh đậm */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ffdd00; /* Màu vàng nhấn */
+}
+
+/* Main Content */
+main {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main h1 {
+  font-size: 2.5em;
+  color: #0077b6; /* Xanh biển */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+main .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+main .buttons button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #0077b6; /* Xanh biển */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+main .buttons button:hover {
+  background-color: #00b4d8; /* Xanh nhạt */
+}
+
+/* Lesson Page */
+.lesson-container {
+  padding: 20px;
+}
+
+.lesson-container h2 {
+  font-size: 2em;
+  color: #0096c7; /* Xanh đậm hơn */
+  margin-bottom: 20px;
+}
+
+.lesson-container p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.lesson-container .questions {
+  margin-top: 20px;
+}
+
+.lesson-container .questions input[type="radio"] {
+  margin-right: 10px;
+}
+
+.lesson-container .questions label {
+  font-size: 1.1em;
+}
+
+.lesson-container .submit-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.lesson-container .submit-button:hover {
+  background-color: #00b4d8;
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Đỏ cam */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #ff9e80;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #444;
+  font-size: 0.9em;
+}

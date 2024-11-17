@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listening Lesson 1</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button onclick="window.location.href='../listening.html'">Back</button>
+    </header>
+    <main>
+      <h1>Lesson 1: Listening</h1>
+      <audio controls>
+        <source src="../audio/lesson1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <form>
+        <fieldset>
+          <legend>Question:</legend>
+          <label
+            ><input type="radio" name="q1" value="a" /> A. This is a speaking
+            test.</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="b" /> B. This is a listening
+            test.</label
+          ><br />
+        </fieldset>
+        <button type="submit" onclick="checkAnswer(event, 'b')">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
